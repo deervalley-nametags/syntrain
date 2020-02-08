@@ -1,0 +1,95 @@
+pages:
+main page, split vertically
+-left: training / ingraining
+-right: testing / recalling
+
+train page
+
+testing page
+
+settings page
+-import
+-export
+
+--------------
+colors:
+A	royal blue
+As	fuschia
+B	yellow
+C	violet		thief
+Cs	dark purple	cook
+D	orange
+Ds	brick red
+E	cherry red
+F	lime green
+Fs	ivory white
+G	brown
+Gs	silver
+
+
+---------
+
+instrument: synthesized piano from square wave with following settings(recode from Wad):
+var piano = new Wad({
+    source : 'square', 
+    env : {
+        attack : .01, 
+        decay : .005, 
+        sustain : .2, 
+        hold : .015, 
+        release : .3
+    }, 
+    filter : {
+        type : 'lowpass', 
+        frequency : 1200, 
+        q : 8.5, 
+        env : {
+            attack : .2, 
+            frequency : 600
+        }
+    }
+})
+
+piano.play({ pitch : 'C5' })
+piano.play({ pitch : 'Eb5', filter : { q : 15 } })
+piano.play({ pitch : 'F5', env : { release : .2 } })
+
+--------
+
+
+types of each testing and recalling:
+mid octave, one for each octave, one for all octaves mixed
+one for each key in 4th(mid) octave
+chord mode, notes: root, third fifth
+chord, major, minor, diminished
+tonics?
+
+
+data to store
+number of iterations of each type of testing
+number of iterations of each type of recalling, number of ea right
+color association graph syntrain
+import export code:
+COL followed by 12 hex color codes for color associations starting at A and working its way up the scale
+TES
+
+
+
+training modes
+give hearing, and note(s), and color simultaneously
+song mode?
+
+
+testing modes
+give hearing - test color
+.
+give hearing - test piano key pos
+give color - test piano key position(might be good idea to ingrain finger motion muscle memory to the whole thing)
+.
+give hearing - test note(s)
+give color - test note(s)
+
+
+malet ar for att jag kan veta noten nar jag bara lyssna pa det baserad pa vilken farg jag ser.
+vet ton av andra saker sadan bil horn, en hosta, etc
+

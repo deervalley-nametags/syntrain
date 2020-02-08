@@ -1,0 +1,53 @@
+.piano-c,.piano-d,.piano-e,.piano-f,.piano-g,.piano-a,.piano-b{
+    position: absolute;
+    width:36px;
+    height:180px;
+    background-color: #fff;
+    border:2px solid black;
+}
+.piano-csharp,.piano-dsharp,.piano-fsharp,.piano-gsharp,.piano-asharp{
+    position: absolute;
+    width:22px;
+    height:100px;
+    background-color: black;
+    border:2px solid black;
+}
+
+
+.piano-c{
+    left:0px;
+}
+.piano-d{
+    left:32px;
+}
+.piano-e{
+    left:64px;
+}
+.piano-f{
+    left:96px;
+}
+.piano-g{
+    left:128px;
+}
+.piano-a{
+    left:160px;
+}
+.piano-b{
+    left:192px;
+}
+
+.piano-csharp{
+    left:22px;
+}
+.piano-dsharp{
+    left:54px;
+}
+.piano-fsharp{
+    left:118px;
+}
+.piano-gsharp{
+    left:150px;
+}
+.piano-asharp{
+    left:182px;
+}
